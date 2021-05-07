@@ -3,9 +3,9 @@ exports.up = function (knex) {
     tbl.increments();
     tbl.text('username', 64).notNullable();
     tbl.text('password', 64).notNullable();
-    tbl.text('first_name', 64);
-    tbl.text('last_name', 64);
-    tbl.text('email', 64);
+    tbl.text('first_name', 64).notNullable();
+    tbl.text('last_name', 64).notNullable();
+    tbl.text('email', 64).notNullable();
   });
 };
 
