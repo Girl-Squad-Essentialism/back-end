@@ -5,6 +5,8 @@ exports.up = function (knex) {
   });
 };
 
+//optional user_id on the value
+
 exports.down = function (knex) {
   return knex.schema.dropTableIfExists('values');
 };
