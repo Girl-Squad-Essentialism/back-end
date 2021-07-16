@@ -69,6 +69,8 @@ router.post('/login', (req, res) => {
   }
 });
 
+// ** DELETE USER **
+
 // TOKEN CREATION
 function makeJwt(user) {
   const payload = {
